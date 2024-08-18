@@ -178,7 +178,7 @@ a {
 .contact-form-section {
     display: flex;
     width: 800px;
-    padding: 30px;
+    padding-top: 70px;
     margin: 0 auto;
 }
 .contact-image {
@@ -188,7 +188,7 @@ a {
     margin-left: 60px;
 }
 .contact-form-heading {
-    font-size: 3rem;
+    font-size: 4rem;
     margin: 0;
 }
 .contact-form-intro {
@@ -197,12 +197,12 @@ a {
 }
 .contact-input {
     display: block;
-    width: 300px;
+    width: 450px;
     margin: 5px auto 15px;
-    border-radius: 20px;
-    padding: 8px 20px;
+    border-radius: 15px;
+    padding: 10px 20px;
     font-size: 1rem;
-    border: 2px solid #333333;
+    border: 2px solid #000000;
 }
 .contact-textarea {
     max-width: 300px;
@@ -210,12 +210,12 @@ a {
     border: 2px solid #333333;
 }
 .contact-input::-webkit-input-placeholder, .address-input::-webkit-input-placeholder {
-    color: #555555;
+    color: #c8c4c4;
 }
 .contact-submit-button {
     border: 2px solid #333333;
-    padding: 8px 20px;
-    border-radius: 40px;
+    padding: 10px 20px;
+    border-radius: 10px;
     margin: 10px auto 0;
     min-width: 120px;
 }
@@ -230,12 +230,12 @@ a {
     width: 110px;
     margin: 5px auto 10px;
     border-radius: 20px;
-    padding: 8px 20px;
+    padding: 10px 20px;
     font-size: 1rem;
     border: 2px solid #333333;
 }
 .postcode {
-    margin-left: 40px;
+    margin-left: 20px;
 }
 .contact-radio {
     margin-right: 20px;
@@ -252,8 +252,14 @@ a {
     font-size: 1rem;
     border: 2px solid #333333;
 }
-.city-select:focus-visible {
+ .city-select:focus-visible {
     outline: 3px solid #bbd5ff;
+}
+.contact-input:focus-visible{
+    outline: 3px solid #99ff00;
+}
+.address-input:focus-visible{
+    outline: 3px solid #ff0400;
 }
 
 
