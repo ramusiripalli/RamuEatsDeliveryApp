@@ -34,7 +34,7 @@ a {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 800px;
+    width: 1000px;
     margin: 0 auto;
 }
 .logo {
@@ -47,7 +47,8 @@ a {
 .nav-link {
     margin: 5px;
     padding: 10px;
-    font-size: 16px;
+    font-size: 18px;
+    font-weight: 700;
 }
 .nav-links {
     display: flex;
@@ -60,18 +61,18 @@ a {
     margin: 120px auto 200px;
 }
 .hero-heading {
-    font-size: 80px;
+    font-size: 75px;
     font-weight: 700;
     margin: 0;
 }
 .hero-heading span {
-    color: #007000;
+    color: #f50000;
     font-weight: 700;
     line-height: 1;
 }
 .hero-text {
     font-size: 20px;
-    max-width: 300px;
+    max-width: 450px;
     margin-bottom: 30px;
 }
 .hero-image {
@@ -82,10 +83,11 @@ a {
     z-index: -1;
 }
 .hero-link {
-    border: 2px solid #333333;
-    padding: 8px 20px;
-    border-radius: 40px;
+    border: 2px solid #000000;
+    padding: 12px 20px;
+    border-radius: 10px;
     width: 100px;
+    margin-top: 15px;
 }
 
 /* Info Section */
@@ -267,6 +269,43 @@ fieldset {
     padding: 10px 10px 10px 20px;
   }
 
+
+  /* Notification Form */
+.form-heading {
+    font-size: 48px;
+    margin: 0;
+}
+.form-intro {
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+.form-section {
+    margin: 120px auto;
+    width: 650px;
+    text-align: center;
+}
+.input {
+    display: block;
+    width: 300px;
+    margin: 5px auto 10px;
+    border-radius: 20px;
+    padding: 8px 20px;
+    border: 2px solid #333333;
+	font-family: 'Poppins', sans-serif;
+}
+
+.submit-button {
+    border: 2px solid #333333;
+    padding: 8px 20px;
+    border-radius: 40px;
+    margin: 10px auto 0;
+    width: 130px;
+	font-family: 'Poppins', sans-serif;
+}
+.submit-button:hover {
+    background-color: #dddddd;
+    cursor: pointer;
+}
 
 /* Footer */
 .footer {
