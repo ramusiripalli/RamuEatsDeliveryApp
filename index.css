@@ -244,6 +244,18 @@ a {
 .radio-container p {
     margin-bottom: 10px;
 }
+.city-select {
+    width: 150px;
+    margin: 5px auto 10px;
+    border-radius: 20px;
+    padding: 8px 10px;
+    font-size: 1rem;
+    border: 2px solid #333333;
+}
+.city-select:focus-visible {
+    outline: 3px solid #bbd5ff;
+}
+
 
 /* Footer */
 .footer {
@@ -270,8 +282,3 @@ a {
     align-items: center;
 }
 
-/* 
-Challenge:
-1. Identify any elements on the page where the text contrast is poor.
-2. Change those elements according to the AAA requirements.
-*/
