@@ -16,25 +16,37 @@
                 <form>
                     <h2 class="contact-form-heading">Sign up</h2>
                     <p class="contact-form-intro">Enter your contact information, and then there will be cake. 🍰</p>
-                    <input class="contact-input" id="" type="text" placeholder="Full name" />
-                    <input class="contact-input" type="text" placeholder="Address" />
+                    <label for="name">Full name</label>
+                    <input class="contact-input" id="name" type="text" placeholder="Ramu Siripalli" />
+                    <label for="address">Address</label>
+                    <input class="contact-input" id="address" type="text" placeholder="G-306 Tellapur" />
                     <div class="address">
                         <div class="city">
-                            <input class="address-input" type="text" placeholder="City" />
+                            <label for="city">City</label>
+                            <select class="city-select" id="city" type="text" placeholder="hyderabad">
+                                <option value="hyderabad">Hyderabad</option>
+                                <option value="bangalore">Bangalore</option>
+                                <option value="vishakapatnam">Vishakapatnam</option>
+                            </select>
                         </div>
                         <div class="postcode">
-                            <input class="address-input" type="text" placeholder="Postcode" />
+                            <label for="postcode">Postcode</label>
+                            <input class="address-input" id="postcode" type="text" placeholder="530020" />
                         </div>
                     </div>
-                    <input class="contact-input" type="text" placeholder="Email" />
+                    <label for="email">Email</label>
+                    <input class="contact-input" id="email" type="text" placeholder="ramusiripalli@gmail.com" />
                     <div class="radio-container">
-                        <p>Do you have cats?</p>
+                        <p>Radio</p>
                         <label for="yes">Yes</label>
                         <input class="contact-radio" id="yes" type="radio" name="cats" />
                         <label for="no">No</label>
                         <input class="contact-radio" id="no" type="radio" name="cats" />
                     </div>
                     <button class="contact-submit-button" type="button">Send message 🎉</button>
+                    
+                
+                    
                 </form>
                 <img class="contact-image" src="images/signUp.jpg" alt="A woman seeing a drone approaching." />
             </section>
