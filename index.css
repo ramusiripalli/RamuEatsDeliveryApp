@@ -182,7 +182,8 @@ a {
     margin: 0 auto;
 }
 .contact-image {
-    width: 400px;
+    width: 600px;
+    height: 400px;
     object-fit: contain;
     margin-left: 60px;
 }
