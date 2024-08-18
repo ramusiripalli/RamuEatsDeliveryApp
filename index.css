@@ -26,7 +26,10 @@ a {
     text-decoration: underline;
 }
 .icon {
-    font-size: 32px;
+    font-size: 2rem;
+}
+ul{
+    list-style-type: none;
 }
 
 /* Navbar */
@@ -47,7 +50,7 @@ a {
 .nav-link {
     margin: 5px;
     padding: 10px;
-    font-size: 18px;
+    font-size: 1rem;
     font-weight: 700;
 }
 .nav-links {
@@ -61,7 +64,7 @@ a {
     margin: 120px auto 200px;
 }
 .hero-heading {
-    font-size: 75px;
+    font-size: 4.6rem;
     font-weight: 700;
     margin: 0;
 }
@@ -71,7 +74,7 @@ a {
     line-height: 1;
 }
 .hero-text {
-    font-size: 20px;
+    font-size: 1.25rem;
     max-width: 450px;
     margin-bottom: 30px;
 }
@@ -99,7 +102,7 @@ a {
     margin-left: 200px;
 }
 .info-heading {
-    font-size: 48px;
+    font-size: 3rem;
     margin: 0;
 }
 .info a {
@@ -124,12 +127,12 @@ a {
 }
 .stat-heading {
     color: #DAFF24;
-    font-size: 20px;
+    font-size: 1.25rem;
     font-weight: 500;
     margin-bottom: 0;
 }
 .stat-number {
-    font-size: 40px;
+    font-size: 2.5rem;
     font-weight: 500;
     margin-top: 0;
     margin-bottom: 20px;
@@ -154,7 +157,7 @@ a {
 }
 .about-heading {
     margin: 0;
-    font-size: 48px;
+    font-size: 3rem;
 }
 .about span {
     color: #007000;
@@ -272,11 +275,11 @@ fieldset {
 
   /* Notification Form */
 .form-heading {
-    font-size: 48px;
+    font-size: 3rem;
     margin: 0;
 }
 .form-intro {
-    font-size: 20px;
+    font-size: 1.25rem;
     margin-bottom: 20px;
 }
 .form-section {
@@ -322,7 +325,7 @@ fieldset {
 }
 .social-links p {
     display: inline;
-    font-size: 16px;
+    font-size: 1rem;
 }
 .social-links ion-icon {
     padding-right: 10px;
