@@ -30,6 +30,7 @@
             <section class="contact-form-section">
                 <form>
                     <h1 class="contact-form-heading">Sign up</h1>
+                    <a href="index.html" id="homeLink">Back to home page</a>
                     <p class="contact-form-intro">Enter your contact information, and then there will be cake. 🍰</p>
                     <label for="name">Full name</label>
                     <input class="contact-input" id="name" type="text" placeholder="Ramu Siripalli" />
@@ -58,14 +59,16 @@
                         <label for="no">No</label>
                         <input class="contact-radio" id="no" type="radio" name="cats" />
                     </fieldset>
-                    <button class="contact-submit-button" type="button">Send message 🎉</button>
+                    <span class="popover-message" id="popoverMessage">⚠️ Complete the form to send the message.</span>
+                    <button class="contact-submit-button" id="submitButton" type="button" onclick="sendMessage()" aria-controls="submitMessage">Send message 🎉</button>
                     
                 
                     
                 </form>
-                <img class="contact-image" src="images/signUp.jpg" alt="A woman seeing a drone approaching." />
+                <img class="contact-image" src="images/signUp.jpg" alt="A Sign Up Image." />
             </section>
         </main>
-    </div>
+        <script src="index.js"></script>
+    
     </body>
 </html>
