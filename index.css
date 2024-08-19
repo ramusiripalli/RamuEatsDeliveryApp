@@ -6,7 +6,7 @@ html, body {
     padding: 0;
     font-family: 'Poppins', sans-serif;
 }
-body, .contact-input, .address-input, .radio-container p {
+body, .contact-input, .address-input,.contact-textarea, .radio-container p {
     font-family: 'Poppins', sans-serif;
 }
 body {
@@ -22,7 +22,7 @@ a {
     text-decoration: none;
 }
 .hero-text a {
-    color: blue;
+    color: rgb(0, 85, 255);
     text-decoration: underline;
 }
 .icon {
@@ -34,6 +34,20 @@ ul{
 #homeLink:focus {
     outline: 4px solid rgba(255, 0, 0, 0.5);
 }
+.skip-nav-link {
+    border: 2px solid #333333;
+    padding: 8px 20px 8px 40px;
+    border-radius: 40px;
+    position: absolute;
+    left: 0px;
+    top: 80px;
+    transition: 1s;
+}
+.skip-nav-link:focus {
+    left: -100px;
+    transition: 3s;
+}
+
 /* Navbar */
 .navbar {
     display: flex;
@@ -84,7 +98,7 @@ ul{
     max-width: 350px;
     position: absolute;
     right: -30px;
-    top: -60px;
+    top: -30px;
     z-index: -1;
 }
 .hero-link {
@@ -93,6 +107,11 @@ ul{
     border-radius: 10px;
     width: 100px;
     margin-top: 15px;
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+.hero-link:hover{
+    background-color: #dddddd;
 }
 
 /* Info Section */
@@ -107,15 +126,19 @@ ul{
     font-size: 3rem;
     margin: 0;
 }
+.info-para{
+    font-size: 1.2rem;
+    font-weight: 400;
+}
 .info a {
-    color: #007000;
+    color: #ff0000;
     text-decoration: underline;
 }
 .statistics {
     width: 620px;
     width: 100%;
     position: relative;
-    background-color: #333333;
+    background-color: #000000;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -124,11 +147,11 @@ ul{
 .info-image {
     position: absolute;
     left: -30px;
-    top: -170px;
+    top: -200px;
     max-width: 200px;
 }
 .stat-heading {
-    color: #DAFF24;
+    color: #ffffff;
     font-size: 1.25rem;
     font-weight: 500;
     margin-bottom: 0;
@@ -145,33 +168,39 @@ ul{
 
 /* About Section */
 .about-section {
-    background-color: rgba(255, 255, 255, 0.8);
+    background-color: rgba(255, 255, 255, 1);
     background-blend-mode: lighten;
     background-image: url(images/clouds.jpg);
     background-size: cover;
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 700px;
+    width: 800px;
+    height: 700px;
     margin: 0 auto;
     padding: 40px;
-    border: 2px solid #333333;
+    border: 3px solid #333333;
+    border-radius: 20px;
 }
 .about-heading {
     margin: 0;
     font-size: 3rem;
 }
 .about span {
-    color: #007000;
+    color: #ff8800;
 }
 .about-link {
-    margin-top: 30px;
-    margin-bottom: 30px;
+    margin: 30px 0px;
+    color: #e12938;
+    font-size: 1.5rem;
 }
 .about a {
     border: 2px solid #333333;
     padding: 8px 20px;
     border-radius: 40px;
+}
+.about-text{
+    font-size: 1.25rem;
 }
 
 /* Sign Up */
@@ -198,6 +227,13 @@ ul{
     font-size: 4rem;
     margin: 0;
 }
+.contact-textarea {
+    max-width: 300px;
+    margin: 5px auto 15px;
+    padding: 16px 20px;
+    border: 2px solid #333333;
+    border-radius: 20px;
+}
 .contact-form-intro {
     font-size: 1.25rem;
     margin-bottom: 20px;
@@ -216,8 +252,8 @@ ul{
     padding: 16px 20px;
     border: 2px solid #333333;
 }
-.contact-input::-webkit-input-placeholder, .address-input::-webkit-input-placeholder {
-    color: #c8c4c4;
+input::-webkit-input-placeholder,.contact-input::-webkit-input-placeholder, .address-input::-webkit-input-placeholder,  .contact-textarea::-webkit-input-placeholder {
+    color: #252525;
 }
 .contact-submit-button {
     border: 2px solid #333333;
@@ -260,10 +296,13 @@ ul{
     border: 2px solid #333333;
 }
  .city-select:focus-visible {
-    outline: 3px solid #bbd5ff;
+    outline: 3px solid #ff0400;
 }
 .contact-input:focus-visible{
-    outline: 3px solid #99ff00;
+    outline: 3px solid #ff0400;
+}
+.contact-textarea:focus-visible{
+    outline: 3px solid #ff0400;
 }
 .address-input:focus-visible{
     outline: 3px solid #ff0400;
@@ -280,7 +319,6 @@ fieldset {
     padding: 10px 10px 10px 20px;
   }
 
-
   /* Notification Form */
 .form-heading {
     font-size: 3rem;
@@ -292,8 +330,9 @@ fieldset {
 }
 .form-section {
     margin: 120px auto;
-    width: 650px;
+    width: 800px;
     text-align: center;
+    font-size: 1.25rem;
 }
 .input {
     display: block;
@@ -309,7 +348,7 @@ fieldset {
     border: 2px solid #333333;
     padding: 8px 20px;
     border-radius: 40px;
-    margin: 10px auto 0;
+    margin: 15px auto 0;
     width: 130px;
 	font-family: 'Poppins', sans-serif;
 }
@@ -320,7 +359,7 @@ fieldset {
 
 /* Footer */
 .footer {
-    background-color: #333333;
+    background-color: #050505;
 }
 .social-links {
     display: flex;

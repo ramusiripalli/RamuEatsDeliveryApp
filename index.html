@@ -13,21 +13,23 @@
     <body>
         <!-- Navigation bar -->
         <nav class="navbar">
+          <a class="skip-nav-link" href="#main">Skip to main content >></a>
             <div class="logo">
                 <span class="iconify icon" data-icon="healthicons:drone-outline"></span>
                 <p class="logo-text">Hunger Kart</p>
             </div>
             <ul class="nav-links">
+               
                 <li><a class="nav-link" href="index.html">Home</a></li>
-                <li><a class="nav-link" href="About.html">About</a></li>
-                <li><a class="nav-link" href="contact.html">Contact</a></li>
                 <li><a class="nav-link" href="signup.html">Sign up</a></li>
-                <li><a class="nav-link" href="notification.html">Notification</a></li>
+                <li><a class="nav-link" href="#about">About</a></li>
+                <li><a class="nav-link" href="#contact">Contact</a></li>
+                <li><a class="nav-link" href="#notification">Notification</a></li>
             </ul>
         </nav>
         
         <!-- Main content -->
-        <main>
+        <main id="main">
             <!-- Hero section -->
             <section class="hero-section">
                 <img class="hero-image" src="images/food.jpg" alt="A food delivery man carrying food with a globe symbol in the background, suggesting worldwide delivery to all locations." />
@@ -43,38 +45,53 @@
             <section class="info-section">
                 <div class="info">
                     <h2 class="info-heading">Food Delivery Service</h3>
-                    <p>We at Hunger Kart are committed to protecting the environment by using electric vehicles for all our food deliveries.</p>
-                    <p> <b><a href="https://www.zomato.com/hyderabad" target="_blank">check out our partnered shops here</a>.</b></p>
+                    <p class="info-para">We at Hunger Kart are committed to protecting the environment by using electric vehicles for all our food deliveries.</p>
+                    <p class="info-para"> <b><a href="https://www.zomato.com/hyderabad" target="_blank">check out our partnered shops here.</a></b></p>
                 </div>
                 <ul class="statistics">
                     <img class="info-image" src="images/hero-image.png" alt="" />
                     <li class="stat">
-                        <h3 class="stat-heading">Restaurants 🏬</h3>
-                        <p class="stat-number">+4000</p>
+                        <h3 class="stat-heading">Restaurants</h3>
+                        <p class="stat-number">+200</p>
                     </li>
                     <li class="stat">
-                        <h3 class="stat-heading">Customers 🙋</h3>
-                        <p class="stat-number">+120 000</p>
+                        <h3 class="stat-heading"> Customers</h3>
+                        <p class="stat-number">+7000</p>
                     </li>
                     <li class="stat">
-                        <h3 class="stat-heading">Pubs🍷</h3>
-                        <p class="stat-number">70</p>
+                        <h3 class="stat-heading">5 Star Reviews</h3>
+                        <p class="stat-number">+400</p>
                     </li>
                 </ul>
             </section> 
 
          <!-- About section -->
-            <section class="about-section">
+            <section class="about-section" id="about">
                 <div class="about">
                     <h2 class="about-heading">About <span>Us</span></h2>
-                    <p class="about-text">Skynet was founded by Ariana Grande, a true pioneer in the field of AI and robotics.🦾 Our purpose is to serve humans and we realized that we’re driving humans around, we’re walking their bio-pets, why not feed them too?</p>
-                    <p>If you want to know more, head over to our about page!</p>
+                    <p class="about-text">Welcome to Hunger Kart, your one-stop solution for all your grocery and food delivery needs! We understand how busy life can get, and we're here to make it easier for you. Whether you're stocking up on essentials or craving your favorite meal, we've got you covered.</p>
+                    <p class="about-text">At Hunger kart, we believe in delivering convenience, quality, and freshness right to your doorstep. Our mission is to save you time and effort, allowing you to focus on what truly matters. With a few taps on your phone, you can explore a wide range of groceries, fresh produce, and delicious meals from your favorite local restaurants.</p>
                     <div class="about-link">
                         <a href="#">About Hunger Kart</a>
                     </div>
                 </div>
             </section>
-            <section class="form-section">
+            <section class="contact-form-section" id="contact">
+                <form>
+                    <h1 class="contact-form-heading" style="color: red;">Reach <span style="color: black;">Out</span></h1>
+                    <div class="contact-form-intro">Curious about something? Complete these fields and "get in touch"</div>
+                    <label for="name">Full name</label>
+                    <input class="contact-input" id="name" type="text" placeholder="Ramu Siripalli" />
+                    <label for="email">Email</label>
+                    <input class="contact-input" id="email" type="text" placeholder="ramusiripalli2425@gmail.com" />
+                    <label for="message">Message</label>
+                    <textarea class="contact-textarea" id="message" rows="4" cols="50" placeholder="Your message..."></textarea>
+                    <button class="contact-submit-button" type="button" onclick="submitForm()">Send message 🎉</button>
+                </form>
+                <img class="contact-image" src="images/contact.jpg" alt="a person asking you contact information." />
+            </section>
+
+            <section class="form-section" id="notification">
                 <form>
                     <h2 class="form-heading">What's Next?</h2>
                     <p class="form-intro">Recieve  notifications when the food is available.</p>
@@ -85,7 +102,6 @@
                     <button class="submit-button" type="button" onclick="submitForm()">Notify me</button>
                 </form>
             </section>
-
         </main>
 
         <!-- Footer -->
